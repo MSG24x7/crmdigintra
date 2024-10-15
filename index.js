@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv").config();
-const dbConnect = require("./dbconfig/dbConnect.js");
+const dbConnect = require("./dbconnect.js");
 const userModel = require("./models/userModel.js");
 const WhatsAppMessage = require("./models/whatsappModel.js");
 const app = express();
@@ -76,6 +76,6 @@ app.get("/webhook", (req, res) => {
 
 //listen port
 app.listen(PORT,()=>{
-console.log(Server is working on ${PORT});
+console.log(`Server is working on ${PORT}`);
 
 })
