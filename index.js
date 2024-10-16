@@ -25,9 +25,7 @@ app.post("/webhook", async (req, res) => {
 
 app.post("/register",async(req,res)=>{
 const {
-   
     display_name,
-   
     user_name,
     email,
     created_at,
@@ -35,7 +33,6 @@ const {
     company,
     contact,
     currency,
-  
     companySize,
     password
 } = req.body;

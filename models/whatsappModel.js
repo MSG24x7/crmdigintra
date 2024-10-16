@@ -72,10 +72,6 @@ const MessageSchema = new mongoose.Schema({
 });
 
 
-
-
-
-
 // Define the schema for statuses
 const StatusSchema = new mongoose.Schema({
   id: { type: String, required: true }, // Unique status ID
