@@ -3,7 +3,7 @@ const cors = require("cors");
 const dotenv = require("dotenv").config();
 const dbConnect = require("./dbconnect.js");
 const userModel = require("./models/userModel.js");
-const WhatsAppMessage = require("./models/whatsappModel.js");
+const WhatsAppMessage = require("./models/WhatsappModel.js");
 const app = express();
 
 app.use(express.json());
